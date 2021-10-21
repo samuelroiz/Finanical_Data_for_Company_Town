@@ -43,9 +43,38 @@ with open(csvpath, 'r') as csvfile:
     for column in csvreader:
         mysum = column[1]
         total += int(mysum)
-        split_mysum = mysum.split()
-        print(split_mysum)
         
+        # To find max and min
+        split_mysum = mysum.split()
+        res = [int(i) for i in split_mysum]
+        list_of_column = []
+        list_of_column = res
+        blank = []
+        blank_again = []
+        b = []
+        flatten_list = [(int())]
+        # print(list_of_column)
+        max_number = max(list_of_column)
+        blank.extend(res)
+        print(blank)
+        blank_again[len(blank_again):]=res
+        print(blank_again)
+        jj = [y for x in (b, res) for y in x]
+        print(jj)
+        # for subl in res:
+        #     for item in subl:
+        #         flatten_list.append(item)
+        print([i for row in [res] for i in row])
+        y = sum(flatten_list, res)
+        print(y)
+        # print(flatten_list)
+
+
+
+
+
+
+
 
 average = ((total)/(total_months))
 average_rdup = round(average, 2)
@@ -57,7 +86,7 @@ average_rdup = round(average, 2)
 
 print(f"Total: ${total}")
 print(f"Average: ${average_rdup}")
-
+# print(f"Average each month: ${average_rdup_month}")
 # print(f"Greatest Increase in Profits: {date} ({h_value}) ")
 # print(f"Greatest Decrease in Profits: {date} ({l_value}) ")
 
