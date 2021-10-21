@@ -1,7 +1,6 @@
 import os
 import csv
 
-
 #Path for csv File
 csvpath = os.path.join("Resources", "budget_data.csv")
 
@@ -44,14 +43,21 @@ with open(csvpath, 'r') as csvfile:
     for column in csvreader:
         mysum = column[1]
         total += int(mysum)
-        #sum_amount = sum_columns(column)
+        split_mysum = mysum.split()
+        print(split_mysum)
         
 
 average = ((total)/(total_months))
 average_rdup = round(average, 2)
 
+
+
+
+
+
 print(f"Total: ${total}")
-print(f"Average Change: ${average_rdup}")
+print(f"Average: ${average_rdup}")
+
 # print(f"Greatest Increase in Profits: {date} ({h_value}) ")
 # print(f"Greatest Decrease in Profits: {date} ({l_value}) ")
 
