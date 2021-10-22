@@ -1,6 +1,7 @@
 import os
 import csv
 
+
 #Path for csv File
 csvpath = os.path.join("Resources", "budget_data.csv")
 
@@ -39,40 +40,40 @@ def sum_columns(x):
 total = 0
 with open(csvpath, 'r') as csvfile:
     next(csvfile) #skips header
-    csvreader = csv.reader(csvfile, delimiter=",") 
-    for column in csvreader:
-        mysum = column[1]
-        total += int(mysum)
+    csvreader = csv.reader(csvfile, delimiter=",")
+    yesterday = 0
+    yearly_change = []
+    max_yearly_change = []
+    print_yearly_change = []
+    average_round_up_list = []
+    for row in csvreader:
+
+
+        today = row[1]
+
+        mysum = row[1]
+
+
+        change = int(today) -int(yesterday)
+
+        yearly_change.append(change)
+
+        average_round_up = change/total_months
         
-        # To find max and min
-        split_mysum = mysum.split()
-        res = [int(i) for i in split_mysum]
-        list_of_column = []
-        list_of_column = res
-        blank = []
-        blank_again = []
-        b = []
-        flatten_list = [(int())]
-        # print(list_of_column)
-        max_number = max(list_of_column)
-        blank.extend(res)
-        print(blank)
-        blank_again[len(blank_again):]=res
-        print(blank_again)
-        jj = [y for x in (b, res) for y in x]
-        print(jj)
-        # for subl in res:
-        #     for item in subl:
-        #         flatten_list.append(item)
-        print([i for row in [res] for i in row])
-        y = sum(flatten_list, res)
-        print(y)
-        # print(flatten_list)
+        average_round_up_list.append(average_round_up)
 
+        print_yearly_change.extend([int(today), int(yesterday), int(change)])
 
+        max_yearly_change.append(int(change))
 
+        yesterday = today
+        
+        total += int(mysum)
 
-
+    maximum_yearly_change = max(max_yearly_change)
+    minimum_yearly_change = min(max_yearly_change)
+    avg_month = sum(average_round_up_list)
+    avg_month_rd_up = round(avg_month, 2)
 
 
 
@@ -84,15 +85,9 @@ average_rdup = round(average, 2)
 
 
 
+
 print(f"Total: ${total}")
 print(f"Average: ${average_rdup}")
-# print(f"Average each month: ${average_rdup_month}")
-# print(f"Greatest Increase in Profits: {date} ({h_value}) ")
-# print(f"Greatest Decrease in Profits: {date} ({l_value}) ")
-
-# print('\nFirst 5 rows are:\n')
-# for row in rows[:5]:
-#     for col in row:
-#         #print("%10s"%col),
-#         print(col)
-#     print('\n')
+print(f"Average each month: ${avg_month_rd_up}")
+print(f"Greatest Increase in Profits: (${maximum_yearly_change}) ")
+print(f"Greatest Decrease in Profits: (${minimum_yearly_change}) ")
