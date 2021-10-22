@@ -1,14 +1,12 @@
 import os
 import csv
 
-
 #Path for csv File
 csvpath = os.path.join("Resources", "budget_data.csv")
 
 fields = []
 rows = []
 columns = []
-
 
 #print out intro. of code
 print("Financial Analysis")
@@ -23,18 +21,9 @@ with open(csvpath, 'r') as csvfile:
         rows.append(row)
     #Extra row, so we must delete the first row in order to count all of the months
     total_months = csvreader.line_num - 1
-    #print(total_months)
-    #print(f"Total numbers of rows: {csvreader.line_num - 1}")
 
     #print out the total of months
     print(f"Total numbers of months : {total_months}")
-
-#def. of sum
-def sum_columns(x):
-    total = 0
-    mysum = x[1]
-    total += int(mysum)
-    sum_columns.variable = total
 
 #Section for "Sum of Profit/Losses"
 total = 0
@@ -46,13 +35,11 @@ with open(csvpath, 'r') as csvfile:
     max_yearly_change = []
     print_yearly_change = []
     average_round_up_list = []
+    date_list = []
     for row in csvreader:
 
-
         today = row[1]
-
         mysum = row[1]
-
 
         change = int(today) -int(yesterday)
 
@@ -70,21 +57,14 @@ with open(csvpath, 'r') as csvfile:
         
         total += int(mysum)
 
+    print(print_yearly_change)
     maximum_yearly_change = max(max_yearly_change)
     minimum_yearly_change = min(max_yearly_change)
     avg_month = sum(average_round_up_list)
     avg_month_rd_up = round(avg_month, 2)
 
-
-
 average = ((total)/(total_months))
 average_rdup = round(average, 2)
-
-
-
-
-
-
 
 print(f"Total: ${total}")
 print(f"Average: ${average_rdup}")
