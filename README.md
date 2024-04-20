@@ -1,36 +1,37 @@
-# Finanical_Data_for_Company_Town
+# Financial Data for Company Town
 
+## Overview
 
-Creating a Python script for analyzing the financial records of the company. The data will determine how the company is doing and whether it is making money or not. Also, look at the months to determine month is best for the company. 
+I am creating a Python script to analyze the financial records of the company. The analysis will determine the company's financial health, indicating whether it is profitable. Additionally, the script will assess which months are most favorable for the company.
 
-![Financial Data Code](https://github.com/samuelroiz/Finanical_Data_for_Company_Town/blob/main/Financial_Analysis/Images/Example_Code_Outcome.png)
+![Financial Data Code](https://github.com/samuelroiz/Financial_Data_for_Company_Town/blob/main/Financial_Analysis/Images/Example_Code_Outcome.png)
 
-The following image is the outcome of the data of the company that is given. As you can see, the code tells us that the company has made a profit and a profit average per month. The data also tells you the minimum and maximum profit or losses to show what month is best for its company.
+The above image shows the outcome of the financial data analysis. As depicted, the script calculates the company's profit and the average profit per month. It also highlights the minimum and maximum profits or losses to identify the best and worst months for the company.
 
-![Election Data Code](https://github.com/samuelroiz/Finanical_Data_for_Company_Town/blob/main/Town_Election/Images/Example_Code_Outcome_Town_Election.png)
+![Election Data Code](https://github.com/samuelroiz/Financial_Data_for_Company_Town/blob/main/Town_Election/Images/Example_Code_Outcome_Town_Election.png)
 
-The following image is the outcome of the data of the town election that is given. As you can see, the code tells us that the winner is Khan and had at least 60 percent of the voters. The least voters was O'Tooley. 
+This image represents the results of the town election data analysis. The script reveals that Khan was the winner with at least 60 percent of the vote, while O'Tooley received the fewest votes.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/samuelroiz/1af49ec9eea365bc845ba04c5071a976) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://gist.github.com/samuelroiz/1af49ec9eea365bc845ba04c5071a976) for details on our code of conduct, and the process for submitting pull requests.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
 ## Authors
 
-* **Samuel Roiz** - *Data clean, Analyzed Data, Math Model* - [Profile](https://github.com/samuelroiz)
+* **Samuel Roiz** - *Data cleaning, Data Analysis, Mathematical Modeling* - [Profile](https://github.com/samuelroiz)
 
 See also the list of [contributors](https://github.com/samuelroiz) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://gist.github.com/samuelroiz/1af49ec9eea365bc845ba04c5071a976) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://gist.github.com/samuelroiz/1af49ec9eea365bc845ba04c5071a976) file for details.
 
 ## Acknowledgments
 
-* CompanyTown 
+* CompanyTown
 * USC Data Visualization
 * CSUN Mathematics
