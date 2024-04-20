@@ -4,11 +4,11 @@
 
 I am developing a Python script to analyze the financial records of the company. The analysis will determine the company's financial health by assessing whether it is profitable and identifying which months are most favorable for the company.
 
-![Financial Data Code](https://github.com/samuelroiz/Financial_Data_for_Company_Town/blob/main/Financial_Analysis/Images/Example_Code_Outcome.png)
+![Financial Data Code](https://github.com/samuelroiz/Finanical_Data_for_Company_Town/blob/main/Financial_Analysis/Images/Example_Code_Outcome.png)
 
 The image above shows the outcome of analyzing the company's financial data. As you can see, the code provides insights into the company's profitability, including the average monthly profit. It also identifies the months with the minimum and maximum profits or losses to determine which months are most and least favorable for the company.
 
-![Election Data Code](https://github.com/samuelroiz/Financial_Data_for_Company_Town/blob/main/Town_Election/Images/Example_Code_Outcome_Town_Election.png)
+![Election Data Code](https://github.com/samuelroiz/Finanical_Data_for_Company_Town/blob/main/Town_Election/Images/Example_Code_Outcome_Town_Election.png)
 
 This image displays the results of analyzing the data from the town election. The code indicates that Khan won with at least 60 percent of the votes, while O'Tooley received the fewest votes.
 
